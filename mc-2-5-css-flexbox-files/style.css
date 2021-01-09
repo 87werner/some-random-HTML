@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {box-sizing: border-box;}
+
+.box {
+    color: white;
+    font-size: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding:15px;
+    
+}
+  
+/* Colours for each box */
+.box1 { background:#eccc68;}
+.box2 { background:#ff6348;}
+.box3 { background:#ff7f50;}
+.box4 { background:#ff4757;}
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;}
+.box7 { background:#2ed573;}
+.box8 { background:#1e90ff;}
+.box9 { background:#c56cf0;}
+.box10 { background:#18dcff;}
+
+
+
+.container{
+    background-color: yellow;
+    min-height: 100vh;
+    display: flex;
+    
+    /* background-color: yellow; */
+    /* min-height: 100vh; */
+    /* flex-direction:column; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+
+    /* justify-content: space-evenly; */
+}
+
+
+
+/* Pre set order or order 0 */
+/* changing box1 to order for will not put it in position 4 becasue the other boxes
+have order 0 */
+/* .box4{
+    order: 1;
+} */
+/* other element still order 0, but box3 comes before box4 in html so it is seen first after box 10  */
+/* .box3{
+    order: 1;
+}
+
+.box7{
+    order: 2;
+}
+.box5{
+    order: 2;
+} */

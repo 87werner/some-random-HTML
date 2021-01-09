@@ -1,0 +1,115 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif; */
+*{
+    
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+}
+
+body,html{
+    width:100%;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+}
+
+.main-header{
+ height: 88px;
+ width: 100%;
+ 
+}
+
+li {
+    list-style: none;
+    display: inline;
+    float: right;
+    margin: 25px 45px 5px 0px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(44, 88, 46);
+}
+
+li:hover{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding-left: 3px;
+   color:orange
+}
+.li-left{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15PX;
+    padding: 10px;
+    border: 2px solid orange;
+    font-size: 35px;
+    color:  rgba(0, 0, 255, 0.642);
+    
+}
+.li-left:hover{
+    font-size: 35px;
+    color: rgba(0, 0, 255, 0.642);
+    padding: 10px;
+   
+    
+}
+
+.title{
+    background-color:rgba(0, 0, 255, 0.642);
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.section{
+    height: 650px;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgba(0, 0, 255, 0.642);
+}
+h1{
+    font-size: 80px;
+    font-style: normal;
+    line-height: 90px;  
+    margin: 90px 0 0 0 ;
+    height: 185px;
+    width: 100%;
+    text-align: center;   
+}
+/* h2{
+    margin-top: 80px;
+    
+} */
+
+strong{
+    color:  orange;
+}
+
+
+.P1{
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-getStarted{
+    font-size:25px;
+    widows: 50%;
+    height: 19%;
+    height: fit-content;
+    background-color:orange;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.btn-getStarted:hover{
+    background-color: white;
+    color:orange;
+}
+

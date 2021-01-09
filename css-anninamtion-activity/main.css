@@ -1,0 +1,265 @@
+/* Activity: button challenge
+Create a html with buttons of the following:
+Code Nation logo in the centre of page so you can hover over it
+In which it spins, changes colour of button background and text 4 buttons around the logo, link to:
+web site facebook page twitter instagram
+These buttons to have:
+4 different shapes
+shadows
+different animation on each one when hover change of colour when clicked and after visited
+Background image with at least two animations */
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, blue, white);
+    
+}
+
+header{
+    height: 200px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg, rgb(36, 185, 123), rgb(35, 71, 82));
+   
+}
+header a{
+    font-family:"Montserrat";
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(240deg, rgb(92, 92, 145), rgb(83, 42, 83));
+    border: 5px solid yellowgreen;
+    cursor: pointer;
+   
+   
+}
+.twitter{
+    font-family:"times";
+    text-decoration: none;
+    color: rgb(20, 11, 11);
+    font-weight: bolder;
+}
+
+.twitter:hover{
+    background-color: tomato;
+    
+}
+
+.box2{
+    text-decoration: none;
+    height:120px;
+    width: 100px;
+    margin-top: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-left: 10px;
+    margin-left: 300px;
+    background-color: yellow;
+  
+   
+}
+.box2:hover{
+    border-radius: 50%;
+    border: 4px solid;
+    box-shadow: 24px 31px 26px 13px rgba(161, 147, 18, 0.938);
+    background-image: linear-gradient(180deg, yellow, rgb(167, 110, 45));
+    cursor: pointer;
+}
+.mian-container {
+    height:800px;
+    padding: 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, blue, white);
+
+}
+.img{
+    width: 25%;
+    height: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out; 
+    animation-name: codeimage; 
+    animation-duration: 5s;
+    animation-delay: 2s; 
+    animation-iteration-count: 2;   
+}
+
+@keyframes codeimage{
+    from {
+        margin-left: 80%;
+        width: 25%; 
+       
+      }
+      to {
+        margin-left: 0%;
+        width: 25%;
+        transform: rotate(360deg);
+        
+      }
+}
+
+
+.img:hover{
+    transform: rotate(360deg);
+    border-top: yellow solid;
+    transform-style: preserve-3d;
+    rotate: left;
+    box-shadow: -14px -50px 0px 21px rgba(88, 228, 24, 0.46);
+}
+
+
+footer{
+    height: 200px;
+    background-image: url(https://wearecodenation.com/app/uploads/2019/06/Long-logo-c.png);
+    background-repeat: no-repeat;
+    background-position: center;        
+}
+
+.box3{
+    background-color: #ce4dd7;
+    height: 70px;
+    border: 2px solid yellowgreen;
+    border-radius: 25%;
+   
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    background-image: linear-gradient(260deg, #82b6d8 0%, #9b79a1 100%);
+}
+
+.mian-container{
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+.button0{
+    width: 25%;
+    height: 250px;
+    border-radius: 10px;
+     transition: 1s ease-in-out;
+     background: url(data:image/png;base64,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);
+     background-repeat: none;
+   
+} 
+.button0{
+    transform: rotate(360deg);
+    transform-style: preserve-3d;
+    rotate: left;
+    
+}
+.button1{
+    font-family:"Montserrat";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: orange solid 3px;
+    background-image: linear-gradient(240deg, rgba(43, 22, 224, 0.74),rgb(235, 158, 16));
+}
+.button2{
+    font-family:"Montserrat";
+    width: 60px;
+    height: 80px;
+    border: orange solid 2px;
+    border-radius: 10%;
+    background-color: rgba(104, 235, 169, 0.507);
+    
+}
+
+
+.button3{
+    font-family:"Montserrat";
+    width: 200px;
+    height: 130px;
+    border-style: dashed;
+    border-color: orange;
+    background-image: linear-gradient(22deg, rgba(247, 199, 110, 0.924), rgb(238, 169, 169));
+}
+
+.button4{
+    font-family:"Montserrat";
+    height: 100px;
+    background-color: palegreen;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+
+
+/* Flexbox rules */
+
+/* .mian-container{
+    display: flex;
+    flex-direction:row;
+   align-content: center;
+    justify-content: space-around;
+
+  
+} */
+
+/* order for the children */
+/* .button0{ */
+    /* align-self: center; */
+    
+   
+
+
+/* .button1{ */
+    /* align-self: flex-start; */
+
+
+
+     

@@ -1,0 +1,51 @@
+
+
+
+ul {
+    background-color: orange;
+    display: inline-block;
+    width: 40%; 
+}
+
+#drinks li {
+    color: blue;
+    /* list-style: none; */
+}
+#drinks li:first-child{
+    color: red;
+}
+
+#drinks li:last-child{
+    color: salmon;
+}
+
+#drinks li:nth-child(2){
+    color: green;
+}
+#drinks li:nth-child(3){
+    color:yellow;
+}
+
+/* CSS read from top to bottom is screen size does fit 500px it reverts to the previous size */
+/* Tablets */
+@media screen and (max-width:  768px){
+    ul {
+
+        background-color:grey;
+    }
+
+}
+/* apply styling that only work up to max screen size 500px 0px up to a max 500px we will apply these rules */
+/* Phone with max 500px */
+@media screen and (max-width: 500px){
+    ul{
+        width: 100%;
+        background-color: royalblue;
+    }
+}
+/* mimimum width or greater only applies to devices with screen width of 500px or above   and (max-width: 1024px)*/
+@media screen and (min-width: 500px) and (max-width: 1024px){
+    ul li{
+        color: yellow;
+    }
+}

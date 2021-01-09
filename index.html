@@ -1,0 +1,81 @@
+
+<!DOCTYPE html> <!--tells browser we are using html5, all the latest elements-->
+<html lang="en"> <!--browser what language-->
+
+<head> <!-- inside our html tag head is for title, link css to style the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>My First HTML</title> <!--important for SEO amungst other things -->
+    
+    <!-- <style>  
+    /* h3 is the selector { } inside we cab pass which various style */
+        h3 { 
+        color: red;
+        font-size: 45px;
+
+        }
+    </style> Interal style sheet, this will over ride the color in main.ccs -->
+</head>
+
+<body> <!--where all our elements go, what we see in the browser-->
+   <nav> <!--for navigation menu & logo-->
+        <ul>
+            <li><a href="index.html">Home</a></li> <!--<a> is the anchor element it uses the href-->
+            <li><a href="about.html">About</a></li>
+        </ul>
+   </nav>
+    <div> <!--wrapped the h1 and p element in a div, div good for styling later-->
+        <h1> My Cake Recipe </h1> <!-- usually only have one h1-->
+                    <!--style is css inline style-->
+                        <!--<span> powerful in css-->
+        <p> This is my <span>steps </span><br>and <em>ingredients</em> and steps to create a delicious cake </p> 
+        <img src="./images/cake.jpeg" alt ="chocolate cake image" style="width: 200px; height: 150px;"/> 
+        <img src="./images/cnorange tag.png" alt="CodeNation log" class="CNO">
+    </div>
+                            
+
+    <div>
+        <h3 class = "active">Ingredients</h3>
+
+        <ul> <!--unordered list--> <!--The parent element has a style pink which will be passed to the child element lists-->
+            <li class ="active bigger" >Eggs</li> <!--li is the list item-->
+            <li>Floor</li>
+            <li id ="important">Butter</li>
+            <li>Sugar</li> <!-- (inline style of orange) of this element over rides the parent element-->
+        </ul>
+    </div>
+
+    <div>
+        <h3> Steps </h3>
+        <ol > <!-- ordered list important at this stage-->
+            <li> Mix indredients </li>
+            <li> Turn oven on </li>
+            <li> Cake in Tray </li>
+            <li> bake it </li>
+
+        </ol>
+    </div>
+
+
+    <div id = "myDiv">
+           <p>Just some random text blablabla</p>
+           <!-- <p id = "center">Just some random text</p> 
+           <p ide = right>Just some random text</p>  -->
+    </div>
+
+    <div id ="myDiv2">
+
+    </div>
+    <div>
+        <!-- <footer> 
+             <ul>
+                <li>Regulation</li>
+                <li>Our tutors</li>
+                <li>Company</li>
+            </ul>
+        </footer>
+    </div> -->
+</body>
+</html> <!-- closing html tag -->

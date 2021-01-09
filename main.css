@@ -1,0 +1,110 @@
+/* This is the better way to style to HTML */
+/* HMTL sheet for content main.css for style keep them separate */
+
+
+
+/* targeting the h3 (based on its tag name) */
+/* h3 {
+ color: blue;
+} */
+
+/* *{  this is the universal selector
+    background-color: aliceblue;
+    font-size: 12px; } */
+/* --- styling for Header ----   organise code in this way */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+#important {
+    color: red;
+}
+/* .active is a class selector for for the first li */
+
+.active {
+    color: orange;
+}
+
+.bigger {
+    font-size: 34px;
+    text-align: center;
+    font-family: Arial, Helvetica, ;
+}
+
+#myDiv {
+    background-color:rgba(212, 142, 11, 0.74);
+    height: 50px;
+    width: 400px;
+    display: inline-block; 
+    padding: 20px 30px 0 30px ;
+    /* top right bottom left - like a clock */
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px; */
+    text-align: center; 
+    border: 4px solid purple;
+    
+    /* margin-left: 50px; 
+    margin-bottom: 50px;
+    margin-top: 80px; */
+/* margin:  top right bottom left - like a clock */
+    margin: 40px 30px  50px  50px;
+     
+}
+/* width in %, takes a % of the parent element, the parent is myDiv */
+#myDiv p {
+    background-color: yellow;
+    margin: 0;
+    border: 2px dotted mediumseagreen;
+    /* display: inline-block;
+    width: 88%; */
+    
+}
+
+#myDiv2{
+    background-color: rgb(46, 224, 46);
+    height: 50px;
+    width: 200px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding will increase the size of the box */
+    /* box-sizing: will help with this; we add this at the top under *{} */
+}
+
+img{
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+
+img:hover{
+    transform: rotate(360deg);
+}
+
+.CNO{
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+
+.CNO:hover{
+    transform: rotate(360de);
+    transform-style: preserve-3d;
+    rotate: left;
+}
+
+
+
+
+
+
+
+
+
+/* <!--#--> */
